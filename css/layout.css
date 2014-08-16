@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.imgFrame {
+	width: 200px;
+	height: 200px;
+	margin: 80px auto;
+}
+/*.imgFrame {
+	width: 200px;
+	height: 300px;
+	margin: 80px auto;
+}
+.imgFrame {
+	width: 300px;
+	height: 200px;
+	margin: 80px auto;
+}*/
