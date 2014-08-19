@@ -34,9 +34,8 @@ function getImgOpt() {
 			_imgElms.each(function () {
 
 				var parent = $(this).parent();
-				var imgElm = $(this);
-				var imgH = +imgElm.height();
-				var imgW = +imgElm.width();
+				var imgH = (this.height === null || this.height === 0) ? +$(this).height() : this.height;
+				var imgW = (this.width === null || this.width === 0) ? +$(this).width() : this.width;
 				var pH = +parent.height();
 				var pW = +parent.width();
 				var newTop = 0;
@@ -81,13 +80,13 @@ function getImgOpt() {
 
 
 
-				imgElm.css({
+				$(this).css({
 					'width': newW,
 					'height': newH,
 				});
 
 
-				imgElm.css({
+				$(this).css({
 					'position': 'absolute',
 					'top': newTop,
 					'left': newLeft
